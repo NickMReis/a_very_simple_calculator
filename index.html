@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>A Very Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>A Very Simple Calculator</h1>
+
+    <div class="container">
+        <div class="box">
+            <h3>Type the first number:</h3>
+            <div class="input-box">
+                <input type="number" id="number1Input">
+            </div>
+            <div class="button-box">
+                <button onclick="enterNumber1()">Confirm the first number</button>
+                <p id="display1"></p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <h3>Type the arithmetic operator (+, -, * or /):</h3>
+            <div class="input-box">
+                <input type="text" id="operatorInput">
+            </div>
+            <div class="button-box">
+                <button onclick="enterOperator()">Confirm the operator</button>
+                <p id="display3"></p>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Type the second number:</h3>
+            <div class="input-box">
+                <input type="number" id="number2Input">
+            </div>
+            <div class="button-box">
+                <button onclick="enterNumber2()">Confirm the second number</button>
+                <p id="display2"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <h3>Result of the Operation:</h3>
+    <p id="display4"></p>
+
+    <button onclick="showResultInNumber1()">Click to continue the operations with this result</button>
+    <button onclick="resetInputsAndText()">Reset the inputs and texts</button>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
